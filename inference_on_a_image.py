@@ -136,6 +136,10 @@ if __name__ == "__main__":
 
     parser.add_argument("--cpu-only", action="store_true", help="running on cpu only!, default=False")
     args = parser.parse_args()
+    args.config_file = "groundingdino/config/GroundingDINO_SwinT_OGC.py"
+    args.checkpoint_path = "/home/maojingwei/nextcloud_data/data/maojingwei/files/groundingdino_swint_ogc.pth"
+    args.image_path = 
+    args.output_dir = "output"
 
     # cfg
     config_file = args.config_file  # change the path of the model config file
